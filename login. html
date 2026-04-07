@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SurveyIN - Login</title>
+    <link rel="stylesheet" href="login-style.css">
+</head>
+<body>
+
+    <div class="top-background">
+        <a href="index.html" class="back-button">
+            <span class="back-arrow">&#10094;</span> BACK
+        </a>
+    </div>
+
+    <div class="login-card">
+        
+        <h1 class="login-title">LOGIN</h1>
+
+        <form>
+            <div class="input-group">
+                <span class="input-icon user-icon">&#128100;</span>
+                <input type="email" placeholder="ENTER EMAIL" required>
+            </div>
+
+            <div class="input-group">
+                <span class="input-icon eye-icon">&#128065;&#10005;</span> <input type="password" placeholder="PASSWORD" required>
+            </div>
+
+            <button type="submit" class="btn-login">LOGIN</button>
+        </form>
+
+        <div class="social-login-section">
+            <p class="social-text">Sign in with</p>
+            
+            <div class="social-icons">
+                <a href="#" class="social-icon facebook-icon">f</a>
+                <a href="#" class="social-icon google-icon">G</a>
+                <a href="#" class="social-icon apple-icon">&#63111;</a> </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
