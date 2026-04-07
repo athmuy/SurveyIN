@@ -121,3 +121,198 @@ body {
     font-size: 40px;
     letter-spacing: 2px;
 }
+
+/* Reset Dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #000; /* Background luar hitam, seperti gambar */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Container utama (ukuran simulasi layar HP) */
+.mobile-view {
+    width: 360px; /* Lebar standar layar HP */
+    height: 640px; /* Tinggi standar layar HP */
+    background-color: #f7cbd7; /* Warna pink header */
+    border-radius: 20px;
+    overflow: hidden; /* Agar konten tidak keluar sudut */
+    position: relative;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+/* Penyesuaian body jika menggunakan container mobile-view di atas (Hapus jika ingin full screen) */
+body {
+    justify-content: center;
+}
+/* -- Hapus baris ini jika ingin container mobile-view -- */
+body { background-color: #f7cbd7; flex-direction: column; align-items: stretch; }
+/* -------------------------------------------------- */
+
+
+/* Area Pink Atas */
+.top-background {
+    height: 35%; /* Mengambil 35% tinggi layar */
+    background-color: #f7cbd7;
+    padding: 20px;
+}
+
+/* Tombol Back */
+.back-button {
+    text-decoration: none;
+    color: #1150ab; /* Biru navy */
+    font-weight: bold;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.back-arrow {
+    font-size: 24px;
+}
+
+/* Kotak Putih Form Login */
+.login-card {
+    background-color: #ffffff;
+    border-top-left-radius: 40px; /* Sudut tumpul atas */
+    border-top-right-radius: 40px;
+    padding: 40px 30px;
+    margin-top: -50px; /* Naik ke area pink */
+    flex: 1; /* Ambil sisa ruang */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.login-title {
+    color: #1150ab;
+    font-family: 'Serif', Georgia, Times New Roman; /* Serif tebal */
+    font-size: 32px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+/* Grup Input (Gaya Kotak Putih) */
+form {
+    width: 100%;
+}
+
+.input-group {
+    border: 3px solid #000; /* Border hitam tebal */
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    height: 70px; /* Tinggi kotak input */
+}
+
+.input-icon {
+    font-size: 40px; /* Ukuran ikon */
+    color: #000;
+    margin-right: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.input-group input {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    color: #1150ab;
+    font-weight: bold;
+}
+
+.input-group input::placeholder {
+    color: #1150ab;
+    opacity: 0.8;
+}
+
+/* Tombol Login Biru */
+.btn-login {
+    background-color: #1150ab;
+    color: #fff;
+    border: none;
+    padding: 15px 50px;
+    border-radius: 30px; /* Sudut tumpul */
+    font-weight: bold;
+    font-size: 18px;
+    text-transform: uppercase;
+    margin: 20px auto 30px auto;
+    display: block;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-login:hover {
+    background-color: #0a369d;
+}
+
+/* Bagian Media Sosial */
+.social-login-section {
+    width: 100%;
+    text-align: center;
+    margin-top: auto; /* Taruh di bawah */
+    padding-bottom: 20px;
+}
+
+.social-text {
+    color: #1150ab;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+}
+
+/* Ikon Sosial Placeholder (Gaya sederhana) */
+.social-icon {
+    text-decoration: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+/* Warna spesifik placeholder (Bisa diganti gambar asli) */
+.facebook-icon {
+    background-color: #1877F2;
+    color: #fff;
+}
+
+.google-icon {
+    background-color: #fff;
+    color: #EA4335;
+    border: 2px solid #ccc;
+    font-family: 'Times New Roman', serif;
+}
+
+.apple-icon {
+    background-color: #000;
+    color: #fff;
+    font-size: 30px;
+}
+
+.social-icon:hover {
+    opacity: 0.8;
+}
